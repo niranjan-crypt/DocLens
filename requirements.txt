@@ -1,0 +1,35 @@
+# Core Configuration & Data Modeling
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+pyyaml>=6.0.1
+python-dotenv>=1.0.1
+
+# Web & Ingestion
+requests>=2.31.0
+beautifulsoup4>=4.12.3
+lxml>=5.1.0
+pdfplumber>=0.10.3
+sec-edgar-downloader>=5.0.3
+
+# NLP, Chunking & Tokenization
+tiktoken>=0.6.0
+numpy<2.0.0
+
+# Vector Database & Retrieval
+sentence-transformers>=2.5.0
+chromadb>=0.4.24
+rank-bm25>=0.2.2
+
+# Database & ORM
+SQLAlchemy>=2.0.27
+psycopg2-binary>=2.9.9
+
+# Serving & UI
+fastapi>=0.109.2
+uvicorn[standard]>=0.27.1
+streamlit>=1.31.1
+
+# Quality, Evaluation & Testing
+pytest>=8.0.2
+pytest-cov>=4.1.0
+tqdm>=4.66.2
