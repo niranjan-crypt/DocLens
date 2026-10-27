@@ -1,0 +1,502 @@
+[
+  {
+    "id": "q01",
+    "type": "factual_lookup",
+    "question": "What are the primary operational revenue segments of Microsoft?",
+    "target_ticker": "MSFT",
+    "target_year": 2025,
+    "gold_section_id": "MSFT_10K_2025_item_1",
+    "reference_answer": "Productivity and Business Processes, Intelligent Cloud, and More Personal Computing.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q02",
+    "type": "factual_lookup",
+    "question": "What are the main products and service lines that comprise Apple's revenue?",
+    "target_ticker": "AAPL",
+    "target_year": 2025,
+    "gold_section_id": "AAPL_10K_2025_item_1",
+    "reference_answer": "iPhone, Mac, iPad, Wearables, Home and Accessories, and Services.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q03",
+    "type": "factual_lookup",
+    "question": "What are Pfizer's primary biopharmaceutical commercial segments?",
+    "target_ticker": "PFE",
+    "target_year": 2025,
+    "gold_section_id": "PFE_10K_2025_item_1",
+    "reference_answer": "Specialty Care, Primary Care, and Oncology.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q04",
+    "type": "factual_lookup",
+    "question": "What core business segments are operated by JPMorgan Chase?",
+    "target_ticker": "JPM",
+    "target_year": 2025,
+    "gold_section_id": "JPM_10K_2025_item_1",
+    "reference_answer": "Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking, and Asset & Wealth Management.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q05",
+    "type": "factual_lookup",
+    "question": "What are the principal business lines of Goldman Sachs?",
+    "target_ticker": "GS",
+    "target_year": 2025,
+    "gold_section_id": "GS_10K_2025_item_1",
+    "reference_answer": "Global Banking & Markets, Asset & Wealth Management, and Platform Solutions.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q06",
+    "type": "factual_lookup",
+    "question": "What are ExxonMobil's core operating divisions in upstream and downstream energy?",
+    "target_ticker": "XOM",
+    "target_year": 2025,
+    "gold_section_id": "XOM_10K_2025_item_1",
+    "reference_answer": "Upstream, Energy Products, Chemical Products, and Specialty Products.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q07",
+    "type": "factual_lookup",
+    "question": "How does Microsoft distribute and sell its commercial software and cloud offerings?",
+    "target_ticker": "MSFT",
+    "target_year": 2025,
+    "gold_section_id": "MSFT_10K_2025_item_1",
+    "reference_answer": "Through field sales, enterprise agreements, digital marketplaces, partners, and resellers.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q08",
+    "type": "factual_lookup",
+    "question": "Where does Apple manufacture and assemble the majority of its hardware products?",
+    "target_ticker": "AAPL",
+    "target_year": 2025,
+    "gold_section_id": "AAPL_10K_2025_item_1",
+    "reference_answer": "Substantially all products are manufactured by third-party outsourcing partners primarily located in Asia.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q09",
+    "type": "factual_lookup",
+    "question": "How does Pfizer conduct research and clinical trials for new vaccines and medicines?",
+    "target_ticker": "PFE",
+    "target_year": 2025,
+    "gold_section_id": "PFE_10K_2025_item_1",
+    "reference_answer": "Through global internal R&D centers, academic collaborations, and contracted clinical trial sites.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q10",
+    "type": "factual_lookup",
+    "question": "What is the primary customer base for JPMorgan's Commercial Banking division?",
+    "target_ticker": "JPM",
+    "target_year": 2025,
+    "gold_section_id": "JPM_10K_2025_item_1",
+    "reference_answer": "Middle market corporations, municipalities, and commercial real estate clients.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q11",
+    "type": "factual_lookup",
+    "question": "What type of investment banking advisory services does Goldman Sachs provide?",
+    "target_ticker": "GS",
+    "target_year": 2025,
+    "gold_section_id": "GS_10K_2025_item_1",
+    "reference_answer": "Mergers and acquisitions, divestitures, corporate defense activities, and capital raisings.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q12",
+    "type": "factual_lookup",
+    "question": "What regions represent ExxonMobil's primary oil and gas production basins?",
+    "target_ticker": "XOM",
+    "target_year": 2025,
+    "gold_section_id": "XOM_10K_2025_item_1",
+    "reference_answer": "The US Permian basin, Guyana offshore, and deepwater assets globally.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q13",
+    "type": "factual_lookup",
+    "question": "What operating systems are developed and monetized by Apple?",
+    "target_ticker": "AAPL",
+    "target_year": 2025,
+    "gold_section_id": "AAPL_10K_2025_item_1",
+    "reference_answer": "iOS, iPadOS, macOS, watchOS, tvOS, and visionOS.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q14",
+    "type": "factual_lookup",
+    "question": "What competitive advantages does Microsoft cite regarding enterprise AI infrastructure?",
+    "target_ticker": "MSFT",
+    "target_year": 2025,
+    "gold_section_id": "MSFT_10K_2025_item_1",
+    "reference_answer": "Global Azure hyperscale datacenter footprint and deep integration with developer tools and OpenAI.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q15",
+    "type": "factual_lookup",
+    "question": "What intellectual property protections are critical to Pfizer's prescription portfolio?",
+    "target_ticker": "PFE",
+    "target_year": 2025,
+    "gold_section_id": "PFE_10K_2025_item_1",
+    "reference_answer": "Patents, patent term extensions, regulatory data exclusivities, and trademarks.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q16",
+    "type": "section_specific",
+    "question": "Summarize the cybersecurity risks disclosed in Microsoft's risk factors.",
+    "target_ticker": "MSFT",
+    "target_year": 2025,
+    "gold_section_id": "MSFT_10K_2025_item_1a",
+    "reference_answer": "Sophisticated nation-state attacks, ransomware, vulnerabilities in software supply chain, and service disruptions.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q17",
+    "type": "section_specific",
+    "question": "What risks related to artificial intelligence does Microsoft disclose in Item 1A?",
+    "target_ticker": "MSFT",
+    "target_year": 2025,
+    "gold_section_id": "MSFT_10K_2025_item_1a",
+    "reference_answer": "Reputational harm from AI hallucinations or bias, intense market competition, and IP litigation risks.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q18",
+    "type": "section_specific",
+    "question": "What supply chain concentration risks does Apple describe in its Risk Factors?",
+    "target_ticker": "AAPL",
+    "target_year": 2025,
+    "gold_section_id": "AAPL_10K_2025_item_1a",
+    "reference_answer": "Reliance on single-source component suppliers and concentration of final assembly in single geographic regions.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q19",
+    "type": "section_specific",
+    "question": "What antitrust and regulatory investigations are highlighted in Apple's Item 1A?",
+    "target_ticker": "AAPL",
+    "target_year": 2025,
+    "gold_section_id": "AAPL_10K_2025_item_1a",
+    "reference_answer": "Scrutiny of App Store commission policies, digital marketplace regulations like DMA in Europe, and DOJ antitrust suits.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q20",
+    "type": "section_specific",
+    "question": "What credit and counterparty risks does JPMorgan face during market volatility in Item 1A?",
+    "target_ticker": "JPM",
+    "target_year": 2025,
+    "gold_section_id": "JPM_10K_2025_item_1a",
+    "reference_answer": "Borrower default risk in commercial real estate, corporate loans, and derivatives clearing failure.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q21",
+    "type": "section_specific",
+    "question": "What liquidity and capital requirement risks does Goldman Sachs emphasize in Item 1A?",
+    "target_ticker": "GS",
+    "target_year": 2025,
+    "gold_section_id": "GS_10K_2025_item_1a",
+    "reference_answer": "Inability to access unsecured funding markets and stringent Basel III capital rules constraining leverage.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q22",
+    "type": "section_specific",
+    "question": "What patent expiration and generic competition risks does Pfizer disclose in Item 1A?",
+    "target_ticker": "PFE",
+    "target_year": 2025,
+    "gold_section_id": "PFE_10K_2025_item_1a",
+    "reference_answer": "Loss of patent exclusivity leading to immediate steep revenue drops from generic and biosimilar substitutes.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q23",
+    "type": "section_specific",
+    "question": "What climate change and carbon policy risks does ExxonMobil outline in Item 1A?",
+    "target_ticker": "XOM",
+    "target_year": 2025,
+    "gold_section_id": "XOM_10K_2025_item_1a",
+    "reference_answer": "Carbon taxes, emissions cap regulations, shifts in consumer demand towards renewables, and litigation.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q24",
+    "type": "section_specific",
+    "question": "What discussion does management provide regarding cloud revenue drivers in Microsoft Item 7?",
+    "target_ticker": "MSFT",
+    "target_year": 2025,
+    "gold_section_id": "MSFT_10K_2025_item_7",
+    "reference_answer": "Azure consumption growth driven by migration of enterprise workloads and scaling of AI services.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q25",
+    "type": "section_specific",
+    "question": "How does Apple management explain services segment margin performance in Item 7?",
+    "target_ticker": "AAPL",
+    "target_year": 2025,
+    "gold_section_id": "AAPL_10K_2025_item_7",
+    "reference_answer": "Higher services gross margin compared to hardware, driven by scale, digital licensing, and subscription volume.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q26",
+    "type": "cross_year_comparison",
+    "question": "How did Microsoft's cybersecurity risk disclosure change between 2024 and 2025?",
+    "target_ticker": "MSFT",
+    "target_year": 2025,
+    "gold_section_id": "MSFT_10K_2025_item_1a",
+    "reference_answer": "Elevated emphasis on Secure Future Initiative (SFI) and mitigating supply-chain identity attacks.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q27",
+    "type": "cross_year_comparison",
+    "question": "What new regulatory risks regarding European digital market compliance did Apple add in 2025 compared to 2024?",
+    "target_ticker": "AAPL",
+    "target_year": 2025,
+    "gold_section_id": "AAPL_10K_2025_item_1a",
+    "reference_answer": "Operational changes and antitrust compliance obligations enforced under the Digital Markets Act (DMA).",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q28",
+    "type": "cross_year_comparison",
+    "question": "How did Apple's commentary on hardware vs services revenue change from 2024 to 2025 in Item 7?",
+    "target_ticker": "AAPL",
+    "target_year": 2025,
+    "gold_section_id": "AAPL_10K_2025_item_7",
+    "reference_answer": "Increased share of overall gross margin coming from recurring paid subscriptions and cloud services.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q29",
+    "type": "cross_year_comparison",
+    "question": "How did Microsoft's capital expenditure disclosures evolve between fiscal 2024 and 2025?",
+    "target_ticker": "MSFT",
+    "target_year": 2025,
+    "gold_section_id": "MSFT_10K_2025_item_7",
+    "reference_answer": "Steep expansion in capex investments allocated toward AI datacenters and GPU infrastructure.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q30",
+    "type": "cross_year_comparison",
+    "question": "How did risk factor language around AI liabilities differ between Apple's 2024 and 2025 filings?",
+    "target_ticker": "AAPL",
+    "target_year": 2025,
+    "gold_section_id": "AAPL_10K_2025_item_1a",
+    "reference_answer": "Specific disclosures introduced around on-device Apple Intelligence deployment and third-party foundation models.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q31",
+    "type": "rulebook_lookup",
+    "question": "What does SEBI LODR Regulation 30 mandate regarding disclosure of material events?",
+    "target_ticker": "SEBI",
+    "target_year": 2015,
+    "gold_section_id": "SEBI_LODR_2015_reg_30",
+    "reference_answer": "Listed entities must disclose material events within 30 minutes from board meeting closure or within 24 hours of occurrence.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q32",
+    "type": "rulebook_lookup",
+    "question": "What is the timeline required under Regulation 30 for disclosing board meeting decisions?",
+    "target_ticker": "SEBI",
+    "target_year": 2015,
+    "gold_section_id": "SEBI_LODR_2015_reg_30",
+    "reference_answer": "Within 30 minutes from the closure of the meeting of the board of directors.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q33",
+    "type": "rulebook_lookup",
+    "question": "What are the board composition requirements specified in Regulation 17?",
+    "target_ticker": "SEBI",
+    "target_year": 2015,
+    "gold_section_id": "SEBI_LODR_2015_reg_17",
+    "reference_answer": "At least one woman director and not less than fifty percent non-executive directors.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q34",
+    "type": "rulebook_lookup",
+    "question": "When does Regulation 17 require that at least half the board be independent directors?",
+    "target_ticker": "SEBI",
+    "target_year": 2015,
+    "gold_section_id": "SEBI_LODR_2015_reg_17",
+    "reference_answer": "Where the listed entity does not have a regular non-executive chairperson.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q35",
+    "type": "rulebook_lookup",
+    "question": "What corporate governance obligations are mandated for subsidiaries under Regulation 24?",
+    "target_ticker": "SEBI",
+    "target_year": 2015,
+    "gold_section_id": "SEBI_LODR_2015_reg_24",
+    "reference_answer": "At least one independent director must be on the board of an unlisted material subsidiary.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q36",
+    "type": "rulebook_lookup",
+    "question": "What deadline is set by Regulation 33 for completing the approval of quarterly financial results?",
+    "target_ticker": "SEBI",
+    "target_year": 2015,
+    "gold_section_id": "SEBI_LODR_2015_reg_33",
+    "reference_answer": "Within forty-five days from the end of each quarter (other than the last quarter).",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q37",
+    "type": "rulebook_lookup",
+    "question": "Under Regulation 33, what accounting standards must govern quarterly financial statements?",
+    "target_ticker": "SEBI",
+    "target_year": 2015,
+    "gold_section_id": "SEBI_LODR_2015_reg_33",
+    "reference_answer": "Accounting Standard 25 or Indian Accounting Standard 34 (Ind AS 34).",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q38",
+    "type": "rulebook_lookup",
+    "question": "What disclosures are required on a listed entity's website under Regulation 46?",
+    "target_ticker": "SEBI",
+    "target_year": 2015,
+    "gold_section_id": "SEBI_LODR_2015_reg_46",
+    "reference_answer": "Business details, independent director appointment terms, committee compositions, code of conduct, and whistle-blower policy.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q39",
+    "type": "rulebook_lookup",
+    "question": "What audit committee duties regarding subsidiaries are required under Regulation 24?",
+    "target_ticker": "SEBI",
+    "target_year": 2015,
+    "gold_section_id": "SEBI_LODR_2015_reg_24",
+    "reference_answer": "Review financial statements, in particular, investments made by the unlisted subsidiary.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q40",
+    "type": "rulebook_lookup",
+    "question": "How are deemed material events treated differently under Regulation 30 compared to other events?",
+    "target_ticker": "SEBI",
+    "target_year": 2015,
+    "gold_section_id": "SEBI_LODR_2015_reg_30",
+    "reference_answer": "They must be disclosed without applying any test of materiality.",
+    "is_unanswerable": false
+  },
+  {
+    "id": "q41",
+    "type": "unanswerable",
+    "question": "What will ExxonMobil's net crude oil revenue be next year in fiscal 2027?",
+    "target_ticker": "XOM",
+    "target_year": 2025,
+    "gold_section_id": "UNANSWERABLE",
+    "reference_answer": "Refusal: forward projections and future stock revenue are outside available 10-K filings.",
+    "is_unanswerable": true
+  },
+  {
+    "id": "q42",
+    "type": "unanswerable",
+    "question": "What is the target stock price for Apple shares by December 2030?",
+    "target_ticker": "AAPL",
+    "target_year": 2025,
+    "gold_section_id": "UNANSWERABLE",
+    "reference_answer": "Refusal: target stock prices are not disclosed in annual reports.",
+    "is_unanswerable": true
+  },
+  {
+    "id": "q43",
+    "type": "unanswerable",
+    "question": "Who will be elected as CEO of Microsoft in the next decade?",
+    "target_ticker": "MSFT",
+    "target_year": 2025,
+    "gold_section_id": "UNANSWERABLE",
+    "reference_answer": "Refusal: future executive appointments are speculative and unmentioned.",
+    "is_unanswerable": true
+  },
+  {
+    "id": "q44",
+    "type": "unanswerable",
+    "question": "What internal unreleased quantum computing algorithms are held in Pfizer's drug labs?",
+    "target_ticker": "PFE",
+    "target_year": 2025,
+    "gold_section_id": "UNANSWERABLE",
+    "reference_answer": "Refusal: proprietary unreleased trade secrets are omitted from public 10-K filings.",
+    "is_unanswerable": true
+  },
+  {
+    "id": "q45",
+    "type": "unanswerable",
+    "question": "Will Goldman Sachs shares outperform the S&P 500 index next quarter?",
+    "target_ticker": "GS",
+    "target_year": 2025,
+    "gold_section_id": "UNANSWERABLE",
+    "reference_answer": "Refusal: market outperformance predictions are prohibited.",
+    "is_unanswerable": true
+  },
+  {
+    "id": "q46",
+    "type": "unanswerable",
+    "question": "What does SEBI Regulation 999 say about interstellar asteroid mining disclosures?",
+    "target_ticker": "SEBI",
+    "target_year": 2015,
+    "gold_section_id": "UNANSWERABLE",
+    "reference_answer": "Refusal: fictitious regulation number not present in SEBI LODR 2015.",
+    "is_unanswerable": true
+  },
+  {
+    "id": "q47",
+    "type": "unanswerable",
+    "question": "What are the exact interest rate predictions of JPMorgan's CEO for year 2040?",
+    "target_ticker": "JPM",
+    "target_year": 2025,
+    "gold_section_id": "UNANSWERABLE",
+    "reference_answer": "Refusal: 2040 macro rates are outside the annual report.",
+    "is_unanswerable": true
+  },
+  {
+    "id": "q48",
+    "type": "unanswerable",
+    "question": "What secret patent formulas were rejected by the FDA for Pfizer in 1965?",
+    "target_ticker": "PFE",
+    "target_year": 2025,
+    "gold_section_id": "UNANSWERABLE",
+    "reference_answer": "Refusal: 1965 filings are not indexed in the corpus.",
+    "is_unanswerable": true
+  },
+  {
+    "id": "q49",
+    "type": "unanswerable",
+    "question": "How many gallons of gasoline will ExxonMobil refine on November 3rd, 2029?",
+    "target_ticker": "XOM",
+    "target_year": 2025,
+    "gold_section_id": "UNANSWERABLE",
+    "reference_answer": "Refusal: future daily output data is absent.",
+    "is_unanswerable": true
+  },
+  {
+    "id": "q50",
+    "type": "unanswerable",
+    "question": "Which specific competitor does Apple plan to acquire in 2028?",
+    "target_ticker": "AAPL",
+    "target_year": 2025,
+    "gold_section_id": "UNANSWERABLE",
+    "reference_answer": "Refusal: future undisclosed corporate takeovers are not in the 10-K.",
+    "is_unanswerable": true
+  }
+]

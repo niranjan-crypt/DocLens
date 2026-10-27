@@ -1,0 +1,113 @@
+# DocLens Master Configuration
+
+project:
+  name: "doclens"
+  version: "0.1.0"
+  description: "A Citation-Grounded Question Answering Assistant over Public Company Annual Reports and Disclosure Regulations"
+  seed: 42
+
+paths:
+  raw_filings_dir: "data/raw/filings"
+  raw_rulebooks_dir: "data/raw/rulebooks"
+  processed_dir: "data/processed"
+  eval_dir: "data/eval"
+  chroma_db_dir: "data/chromadb"
+  bm25_index_path: "data/bm25_index.pkl"
+  db_path: "sqlite:///data/doclens.db"
+  postgres_url_env: "DATABASE_URL"
+
+corpus:
+  companies:
+    - ticker: "MSFT"
+      name: "Microsoft Corporation"
+      sector: "Technology"
+      cik: "0000789019"
+      fiscal_years: [2024, 2025]
+    - ticker: "AAPL"
+      name: "Apple Inc."
+      sector: "Technology"
+      cik: "0000320193"
+      fiscal_years: [2024, 2025]
+    - ticker: "JPM"
+      name: "JPMorgan Chase & Co."
+      sector: "Financials"
+      cik: "0000019617"
+      fiscal_years: [2025]
+    - ticker: "GS"
+      name: "Goldman Sachs Group Inc."
+      sector: "Financials"
+      cik: "0000886982"
+      fiscal_years: [2025]
+    - ticker: "PFE"
+      name: "Pfizer Inc."
+      sector: "Healthcare"
+      cik: "0000078003"
+      fiscal_years: [2025]
+    - ticker: "XOM"
+      name: "Exxon Mobil Corporation"
+      sector: "Energy"
+      cik: "0000034088"
+      fiscal_years: [2025]
+  rulebooks:
+    - id: "SEBI_LODR_2015"
+      title: "Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015"
+      version: "2015 (Amended 2023)"
+      source_url: "https://www.sebi.gov.in/legal/regulations/sep-2015/securities-and-exchange-board-of-india-listing-obligations-and-disclosure-requirements-regulations-2015-last-amended-on-september-20-2023-_37284.html"
+
+ingestion:
+  user_agent_name: "Niranjan Krishnakumar"
+  user_agent_email: "niranjankk9@gmail.com"
+  sec_rate_limit_per_second: 5
+  max_retries: 3
+  backoff_factor: 2.0
+  target_sections:
+    - id: "item_1"
+      name: "Item 1. Business"
+    - id: "item_1a"
+      name: "Item 1A. Risk Factors"
+    - id: "item_7"
+      name: "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+
+quality_gate:
+  max_garbage_char_ratio: 0.02
+  min_sections_per_filing: 2
+  min_tokens_per_section: 200
+  max_tokens_per_section: 150000
+  duplicate_jaccard_threshold: 0.95
+
+chunking:
+  baseline:
+    chunk_size: 500
+    chunk_overlap: 100
+  structure_aware:
+    target_tokens: 400
+    min_tokens: 150
+    max_tokens: 600
+    overlap_tokens: 60
+    prepend_header: true
+
+embeddings:
+  model_name: "BAAI/bge-small-en-v1.5"
+  query_instruction: "Represent this sentence for searching relevant passages: "
+  normalize_embeddings: true
+  batch_size: 32
+
+retrieval:
+  top_k_dense: 20
+  top_k_sparse: 20
+  rrf_k: 60
+  reranker_model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  final_top_k: 5
+  refusal_score_threshold: 0.15
+
+generation:
+  model_name: "llama3.2:3b"
+  ollama_base_url: "http://localhost:11434"
+  api_fallback_enabled: true
+  temperature: 0.1
+  max_new_tokens: 512
+  refusal_message: "The provided documents do not contain enough information to answer this question."
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
