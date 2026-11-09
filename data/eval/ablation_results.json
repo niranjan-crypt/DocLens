@@ -1,0 +1,42 @@
+[
+  {
+    "configuration": "Fixed chunking + vector only",
+    "recall_at_5": 1.0,
+    "mrr": 0.4408,
+    "citation_validity": 1.0,
+    "refusal_accuracy": 0.86,
+    "avg_latency_ms": 67.19
+  },
+  {
+    "configuration": "Structure-aware chunking + vector only",
+    "recall_at_5": 1.0,
+    "mrr": 0.9375,
+    "citation_validity": 1.0,
+    "refusal_accuracy": 0.86,
+    "avg_latency_ms": 17.65
+  },
+  {
+    "configuration": "+ BM25 hybrid (RRF)",
+    "recall_at_5": 1.0,
+    "mrr": 0.9458,
+    "citation_validity": 1.0,
+    "refusal_accuracy": 0.86,
+    "avg_latency_ms": 17.99
+  },
+  {
+    "configuration": "+ Cross-encoder reranker",
+    "recall_at_5": 1.0,
+    "mrr": 0.9292,
+    "citation_validity": 1.0,
+    "refusal_accuracy": 0.98,
+    "avg_latency_ms": 229.45
+  },
+  {
+    "configuration": "+ Metadata filters",
+    "recall_at_5": 0.9,
+    "mrr": 0.875,
+    "citation_validity": 1.0,
+    "refusal_accuracy": 1.0,
+    "avg_latency_ms": 90.87
+  }
+]
