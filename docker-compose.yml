@@ -1,0 +1,50 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: doclens_postgres
+    environment:
+      POSTGRES_USER: doclens
+      POSTGRES_PASSWORD: doclens_password
+      POSTGRES_DB: doclens_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U doclens -d doclens_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: .
+    container_name: doclens_api
+    command: uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://doclens:doclens_password@postgres:5432/doclens_db
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  ui:
+    build: .
+    container_name: doclens_ui
+    command: streamlit run app/streamlit_app.py --server.port 8501 --server.address 0.0.0.0
+    volumes:
+      - .:/app
+    ports:
+      - "8501:8501"
+    environment:
+      - API_BASE_URL=http://api:8000
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
